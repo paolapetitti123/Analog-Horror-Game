@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Wake Up</title>
+  <script type="module" crossorigin src="./assets/index-28283565.js"></script>
+  <link rel="stylesheet" href="./assets/index-1514749a.css">
+</head>
+<body onload="addEvent()">
+    <div id="root"></div>
+    </body>
+    <audio id="backgroundAmbience">
+        <source src="/sound/ambient-background.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        function addEvent(){
+            document.addEventListener("click",play)
+        }
+        function play(){
+            let audio = document.getElementById("backgroundAmbience");
+            audio.play();
+        }
+        
+    </script>
+</html>
